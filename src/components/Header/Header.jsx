@@ -30,8 +30,8 @@ const Header = () => {
         </h2>
         <h4>Front-end Developer</h4>
         <div className="header_info-links">
-          <a>Download CV</a>
-          <a>Let's talk</a>
+          <a href="#">Download CV</a>
+          <a href="#">Let's talk</a>
         </div>
       </div>
       <div className="header_scroll-down">
