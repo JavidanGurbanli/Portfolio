@@ -6,9 +6,11 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 body{
   background-color: #1f1f38;
   background-image: url("./assets/images/bg-texture.png");
-  scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
 }

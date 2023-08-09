@@ -6,7 +6,7 @@ const Nav = () => {
     <nav>
         <ul>
             <li><a href='#'><FontAwesomeIcon icon={faHouse} /></a></li>
-            <li><a href='#'><FontAwesomeIcon icon={faUser} /></a></li>
+            <li><a href='#about'><FontAwesomeIcon icon={faUser} /></a></li>
             <li><a href='#'><FontAwesomeIcon icon={faCode} /></a></li>
             <li><a href='#'><FontAwesomeIcon icon={faLaptopCode} /></a></li>
             <li><a href='#'><FontAwesomeIcon icon={faMessage} /></a></li>

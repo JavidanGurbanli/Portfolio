@@ -58,11 +58,11 @@ header {
             border-radius: 5px;
             transition: all 0.4s ease-in-out;
             text-decoration: none;
-            color:#fff;
+            color:#1f1f38;
             &:first-child{
                 background-color: transparent;
                 border: 1px solid #4db5ff;
-                color:#4db5ff
+                color:#4db5ff;
             }
             &:hover{
                 background-color: #fff;
