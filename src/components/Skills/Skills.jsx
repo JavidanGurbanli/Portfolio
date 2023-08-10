@@ -22,7 +22,7 @@ const Skills = () => {
             <div className="card">
                 <h3>Soft Skills</h3>
                 <ul>
-                    <li><FontAwesomeIcon icon={faUserPen} className="icon" /> Communication</li>
+                    <li><FontAwesomeIcon icon={faUserPen} className="icon" />Communication</li>
                     <li><FontAwesomeIcon icon={faUserPen} className="icon"/> Teamwork</li>
                     <li><FontAwesomeIcon icon={faUserPen} className="icon"/> Problem Solving</li>
                     <li><FontAwesomeIcon icon={faUserPen} className="icon"/> Adaptability</li>

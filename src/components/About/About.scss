@@ -13,27 +13,28 @@
     .about_container{
         display: flex;
         justify-content: space-between;
-        .about_me{
-            width: 350px;
-            height: 350px;
-            background: linear-gradient(45deg, transparent, #4db5ff, transparent);
-            border-radius: 10px;
             .about_image{
-                width: 350px;
-                height: 350px;
-                rotate: 10deg;
+                width: auto;
+                height: auto;
+                max-width: 350px;
+                max-height: 350px;
+                background: linear-gradient(45deg, transparent, #4db5ff, transparent);
                 transition: all 0.4s ease-in-out;
+                border-radius: 10px;
+                margin-right: 50px;
                 img{
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     border-radius: 10px;
-                }
-                &:hover{
-                    rotate: 0deg;
+                    rotate: 10deg;
+                    transition: all 0.4s ease-in-out;
+                    vertical-align: middle;
+                    &:hover{
+                        rotate: 0deg;
+                    }
                 }
             }
-        }
         .about_content{
             width: 50%;
             display: flex;
@@ -43,13 +44,16 @@
                 display: flex;
                 column-gap: 10px;
                 width: 100%;
+                height: auto;
                 .card{
-                    width: 100%;
+                    width: 50%;
                     background-color: #2c2c6c;
-                    height: 150px;
+                    min-height: 150px;
+                    height: auto;
                     border-radius: 10px;
                     display: flex;
                     flex-direction: column;
+                    row-gap: 10px;
                     padding:30px;
                     justify-content: space-between;
                     align-items: center;
@@ -67,7 +71,7 @@
             }
             .about_content-text{
                 color:rgba(255, 255, 255, 0.6);
-                line-height:1.8;
+                line-height:1.5;
             }
             a{
                 padding:10px 5px;
@@ -85,3 +89,28 @@
         }
     }
 }
+
+@media (max-width: 992px) {
+    #about{
+      width: 90%;
+    }
+  }
+
+@media (max-width: 768px) {
+    #about{
+      width: 90%;
+        .about_container{
+            flex-direction: column;
+            row-gap: 50px;
+            align-items: center;
+            .about_image{
+                max-width: 80%;
+                max-height: 80%;
+                margin: 0;
+            }
+            .about_content{
+                width: 80%;
+            }
+        }
+    }
+  }
