@@ -37,7 +37,7 @@ const About = () => {
             that not only works flawlessly but is also maintainable and
             scalable.
           </div>
-          <a href="#">Lets Talk</a>
+          <a href="#contact">Lets Talk</a>
         </div>
       </div>
     </section>

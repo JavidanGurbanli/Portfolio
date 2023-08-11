@@ -36,7 +36,7 @@ const Header = () => {
         <h4>Front-end Developer</h4>
         <div className="header_info-links">
           <a href={MyCv} download>Download CV</a>
-          <a href="#">Let's talk</a>
+          <a href="#contact">Let's talk</a>
         </div>
       </div>
       <div className="header_scroll-down" onClick={scrollToBottom}>
