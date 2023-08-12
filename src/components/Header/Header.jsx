@@ -29,7 +29,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header>
+    <header id="home">
       <ul data-aos="fade-up">
         <li>
           <a

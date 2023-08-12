@@ -1,4 +1,3 @@
-import React from "react";
 import "./About.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAward, faFolderOpen } from "@fortawesome/free-solid-svg-icons";
@@ -8,7 +7,7 @@ const About = () => {
       <h2 data-aos="fade-up">About Me</h2>
       <div className="about_container">
         <div className="about_image" data-aos="zoom-out">
-          <img src={`${process.env.PUBLIC_URL}/images/CV photo.png`} alt="me" />
+          <img src="/images/CV photo.png" alt="me" />
         </div>
         <div className="about_content" data-aos="zoom-out">
           <div className="about_content-cards">

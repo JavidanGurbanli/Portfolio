@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouse,
@@ -7,35 +8,57 @@ import {
   faMessage,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Nav.scss";
+
 const Nav = () => {
+  const sections = [
+    { id: "home", icon: faHouse },
+    { id: "about", icon: faUser },
+    { id: "skills", icon: faCode },
+    { id: "portfolio", icon: faLaptopCode },
+    { id: "contact", icon: faMessage },
+  ];
+
+  const [activeSection, setActiveSection] = useState(sections[0].id);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+
+      const activeSections = sections.filter((section) => {
+        const sectionElement = document.getElementById(section.id);
+        if (sectionElement) {
+          const { offsetTop, offsetHeight } = sectionElement;
+          return (
+            scrollPosition >= offsetTop - windowHeight / 2 &&
+            scrollPosition < offsetTop + offsetHeight
+          );
+        }
+        return false;
+      });
+
+      if (activeSections.length > 0) {
+        setActiveSection(activeSections[0].id);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <nav>
       <ul>
-        <li>
-          <a href="#">
-            <FontAwesomeIcon icon={faHouse} />
-          </a>
-        </li>
-        <li>
-          <a href="#about">
-            <FontAwesomeIcon icon={faUser} />
-          </a>
-        </li>
-        <li>
-          <a href="#skills">
-            <FontAwesomeIcon icon={faCode} />
-          </a>
-        </li>
-        <li>
-          <a href="#portfolio">
-            <FontAwesomeIcon icon={faLaptopCode} />
-          </a>
-        </li>
-        <li>
-          <a href="#contact">
-            <FontAwesomeIcon icon={faMessage} />
-          </a>
-        </li>
+        {sections.map((section) => (
+          <li
+            key={section.id}
+            className={activeSection === section.id ? "active" : ""}
+          >
+            <a href={`#${section.id}`}>
+              <FontAwesomeIcon icon={section.icon} />
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   );
