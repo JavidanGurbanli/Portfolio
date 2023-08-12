@@ -9,7 +9,7 @@ const Nav = () => {
             <li><a href='#about'><FontAwesomeIcon icon={faUser} /></a></li>
             <li><a href='#skills'><FontAwesomeIcon icon={faCode} /></a></li>
             <li><a href='#portfolio'><FontAwesomeIcon icon={faLaptopCode} /></a></li>
-            <li><a href='#'><FontAwesomeIcon icon={faMessage} /></a></li>
+            <li><a href='#contact'><FontAwesomeIcon icon={faMessage} /></a></li>
         </ul>
     </nav>
   )

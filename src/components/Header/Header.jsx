@@ -1,16 +1,36 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import Typewriter from "typewriter-effect";
 import "./Header.scss";
 import MyCv from "../../assets/files/Javidan Gurbanli.pdf";
+import { useState,useEffect } from "react";
 
 const Header = () => {
-  const scrollToBottom = () => {
-    window.scrollTo({ top: document.body.scrollHeight});
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
   };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <header>
-      <ul>
+      <ul data-aos="fade-up">
         <li>
           <a href="https://www.linkedin.com/in/javidangurbanli/" target="_blank" rel="noreferrer" >
             <FontAwesomeIcon icon={faLinkedin} />
@@ -22,7 +42,7 @@ const Header = () => {
           </a>
         </li>
       </ul>
-      <div className="header_info">
+      <div className="header_info" data-aos="fade-up">
         <p>Hello I'm</p>
         <h2>
           <Typewriter
@@ -39,9 +59,12 @@ const Header = () => {
           <a href="#contact">Let's talk</a>
         </div>
       </div>
-      <div className="header_scroll-down" onClick={scrollToBottom}>
-        <p>Scroll Down</p>
+      <div className="header_scroll-down" data-aos="fade-up">
+        <a href="#contact">Scroll Down</a>
       </div>
+      <button  className={`toTop ${isVisible ? 'visible' : ''}`} onClick={scrollToTop}>
+        <FontAwesomeIcon icon={faArrowUp} bounce />
+      </button>
     </header>
   );
 };

@@ -1,54 +1,52 @@
-
 {
-    "projects": [
-      {
-        "imgUrl": "../images/Portfolio_js.png",
-        "title": "First Portfolio",
-        "description": "This is a portfolio website that I created using HTML, CSS, and JavaScript.",
-        "technologies": ["HTML5", "SCSS", "JavaScript"],
-        "githubLink": "https://github.com/JavidanGurbanli/Portfolio-html-css-js-",
-        "websiteLink": "https://ornate-cannoli-512a55.netlify.app/"
-      },
-      {
-        "imgUrl": "../images/Truvimons.png",
-        "title": "Truvimons",
-        "description": "This is the Ultimate Data Analysis Platform.",
-        "technologies": ["SCSS", "JavaScript", "React JS"],
-        "githubLink": "https://github.com/JavidanGurbanli/Truvimons",
-        "websiteLink": "https://exquisite-frangollo-3939ce.netlify.app/"
-      },
-      {
-        "imgUrl": "../images/To-do-App.png",
-        "title": "Todo App",
-        "description": "This is a todo app created with JavaScript, and local storage is also used.",
-        "technologies": ["HTML5", "SCSS", "JavaScript"],
-        "githubLink": "https://github.com/JavidanGurbanli/Javascript-LocalStorage-Todo-App",
-        "websiteLink": "https://endearing-jalebi-983813.netlify.app/"
-      },
-      {
-        "imgUrl": "../images/OneSchool.png",
-        "title": "OneSchool",
-        "description": "This is a education page.",
-        "technologies": ["HTML5", "SCSS"],
-        "githubLink": "https://github.com/JavidanGurbanli/OneSchool",
-        "websiteLink": "https://snazzy-longma-02b7d5.netlify.app//"
-      },
-      {
-        "imgUrl": "../images/Netflix.png",
-        "title": "Netflix clone",
-        "description": "This is a movie page that shows the latest movies.",
-        "technologies": ["CSS3", "JavaScript", "React JS"],
-        "githubLink": "https://github.com/JavidanGurbanli/Movie-app",
-        "websiteLink": "https://tangerine-maamoul-6d9ec2.netlify.app/"
-      },
-      {
-        "imgUrl": "../images/Travel.png",
-        "title": "Travel",
-        "description": "This page offers a first-class travel experience.",
-        "technologies": ["CSS3", "JavaScript", "React JS"],
-        "githubLink": "https://github.com/JavidanGurbanli/Travel",
-        "websiteLink": "https://chic-scone-33b24c.netlify.app/"
-      }
-    ]
-  }
-  
+  "projects": [
+    {
+      "imgUrl": "../images/Portfolio_js.png",
+      "title": "First Portfolio",
+      "description": "This is a portfolio website that I created using HTML, CSS, and JavaScript.",
+      "technologies": ["HTML5", "SCSS", "JavaScript"],
+      "githubLink": "https://github.com/JavidanGurbanli/Portfolio-html-css-js-",
+      "websiteLink": "https://ornate-cannoli-512a55.netlify.app/"
+    },
+    {
+      "imgUrl": "../images/Truvimons.png",
+      "title": "Truvimons",
+      "description": "This is the Ultimate Data Analysis Platform.",
+      "technologies": ["SCSS", "JavaScript", "React JS"],
+      "githubLink": "https://github.com/JavidanGurbanli/Truvimons",
+      "websiteLink": "https://exquisite-frangollo-3939ce.netlify.app/"
+    },
+    {
+      "imgUrl": "../images/To-do-App.png",
+      "title": "Todo App",
+      "description": "This is a todo app created with JavaScript, and local storage is also used.",
+      "technologies": ["HTML5", "SCSS", "JavaScript"],
+      "githubLink": "https://github.com/JavidanGurbanli/Javascript-LocalStorage-Todo-App",
+      "websiteLink": "https://endearing-jalebi-983813.netlify.app/"
+    },
+    {
+      "imgUrl": "../images/OneSchool.png",
+      "title": "OneSchool",
+      "description": "This is a education page.",
+      "technologies": ["HTML5", "SCSS"],
+      "githubLink": "https://github.com/JavidanGurbanli/OneSchool",
+      "websiteLink": "https://snazzy-longma-02b7d5.netlify.app//"
+    },
+    {
+      "imgUrl": "../images/Netflix.png",
+      "title": "Netflix clone",
+      "description": "This is a movie page that shows the latest movies.",
+      "technologies": ["CSS3", "JavaScript", "React JS"],
+      "githubLink": "https://github.com/JavidanGurbanli/Movie-app",
+      "websiteLink": "https://tangerine-maamoul-6d9ec2.netlify.app/"
+    },
+    {
+      "imgUrl": "../images/Travel.png",
+      "title": "Travel",
+      "description": "This page offers a first-class travel experience.",
+      "technologies": ["CSS3", "JavaScript", "React JS"],
+      "githubLink": "https://github.com/JavidanGurbanli/Travel",
+      "websiteLink": "https://chic-scone-33b24c.netlify.app/"
+    }
+  ]
+}

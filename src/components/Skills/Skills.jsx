@@ -4,9 +4,9 @@ import { faCode,faUserPen} from "@fortawesome/free-solid-svg-icons";
 const Skills = () => {
   return (
     <section id="skills">
-        <h2>Skills</h2>
+        <h2 data-aos="fade-up">Skills</h2>
         <div className="skills_cards">
-            <div className="card">
+            <div className="card" data-aos="fade-up-right">
                 <h3>Front-end Development</h3>
                 <ul>
                     <li><FontAwesomeIcon icon={faCode} className="icon" /> HTML</li>
@@ -19,7 +19,7 @@ const Skills = () => {
                     <li><FontAwesomeIcon icon={faCode} className="icon"/> Redux</li>
                 </ul>
             </div>
-            <div className="card">
+            <div className="card" data-aos="fade-up-left">
                 <h3>Soft Skills</h3>
                 <ul>
                     <li><FontAwesomeIcon icon={faUserPen} className="icon" />Communication</li>

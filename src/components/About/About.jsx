@@ -1,17 +1,16 @@
 import React from "react";
 import "./About.scss";
-import MyPhoto from "../../assets/images/CV photo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAward, faFolderOpen } from "@fortawesome/free-solid-svg-icons";
 const About = () => {
   return (
     <section id="about">
-      <h2>About Me</h2>
+      <h2 data-aos="fade-up">About Me</h2>
       <div className="about_container">
-        <div className="about_image">
-          <img src={MyPhoto} alt="me" />
+        <div className="about_image" data-aos="zoom-out">
+          <img src={`${process.env.PUBLIC_URL}/images/CV photo.png`} alt="me" />
         </div>
-        <div className="about_content">
+        <div className="about_content" data-aos="zoom-out">
           <div className="about_content-cards">
             <div className="card">
               <FontAwesomeIcon icon={faAward} className="icon" />
@@ -21,7 +20,7 @@ const About = () => {
             <div className="card">
               <FontAwesomeIcon icon={faFolderOpen} className="icon" />
               <h3>Projects</h3>
-              <p>20+ Completed Projects</p>
+              <p>10+ Completed Projects</p>
             </div>
           </div>
           <div className="about_content-text">

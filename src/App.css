@@ -11,6 +11,6 @@ html{
 }
 body{
   background-color: #1f1f38;
-  background-image: url("./assets/images/bg-texture.png");
+  background-image: url("../public/images/bg-texture.png");
   font-family: 'Poppins', sans-serif;
 }

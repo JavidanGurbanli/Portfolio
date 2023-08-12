@@ -3,16 +3,16 @@ import "./Portfolio.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, A11y, Autoplay } from "swiper/modules";
 import "swiper/css";
-
 const Portfolio = () => {
   const redirectHandler = (link) => {
     window.open(link, "_blank");
   };
 
+
   return (
     <section id="portfolio">
-      <h2>Portfolio</h2>
-      <div className="projects">
+      <h2 data-aos="fade-up">Portfolio</h2>
+      <div className="projects" data-aos="zoom-in">
         <Swiper
           modules={[A11y, EffectCoverflow, Autoplay]}
           spaceBetween={50}
