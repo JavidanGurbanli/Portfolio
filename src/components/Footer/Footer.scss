@@ -1,55 +1,55 @@
-footer{
-    width: 100%;
-    height: 380px;
+footer {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #2c2c6c;
+  h2 {
+    text-align: center;
+    color: #4db5ff;
+    font-weight: 200;
+    margin: 40px 0 10px 0;
+  }
+  ul {
     display: flex;
-    flex-direction: column;
-    row-gap: 40px;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #2c2c6c;
-    h2 {
+    column-gap: 50px;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: hsla(0, 0%, 100%, 0.6);
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .social_links {
+    column-gap: 10px;
+    li {
+      a {
+        font-size: 18px;
         text-align: center;
-        color: #4db5ff;
-        font-weight: 200;
-        margin: 40px 0 10px 0;
+        border-radius: 10px;
+        padding: 10px 15px;
+        background-color: rgba(0, 0, 0, 0.3);
       }
-      ul{
-        display: flex;
-        column-gap: 50px;
-        li{
-            list-style: none;
-            a{
-                text-decoration: none;
-                color:hsla(0,0%,100%,.6);
-                transition:all 0.4s ease-in-out;
-                &:hover{
-                    color:#fff;
-                }
-            }
-        }
-      }
-      .social_links{
-        column-gap: 10px;
-        li{
-            a{
-                font-size: 18px;
-                text-align: center;
-                border-radius: 10px;
-                padding: 10px 15px;
-                background-color: rgba(0,0,0,.3);
-            }
-        }
-      }
-      p{
-        color: #fff;
-        font-size: 14px;
-      }
+    }
+  }
+  p {
+    color: #fff;
+    font-size: 14px;
+  }
 }
 
-@media (max-width: 576px){
-    footer{
-        ul{
-            column-gap: 20px;
-        }
+@media (max-width: 576px) {
+  footer {
+    ul {
+      column-gap: 20px;
     }
+  }
 }

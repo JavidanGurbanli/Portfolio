@@ -6,18 +6,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const schema = yup
-.object({
-  fullname: yup.string().trim().test("two-words", "Fullname must contain at least two words", (value) => {
-    if (value) {
-      const words = value.split(" ");
-      return words.length === 2;
-    }
-    return false;
-  }).required(),
+const schema = yup.object({
+  fullname: yup
+    .string()
+    .trim()
+    .test("two-words", "Fullname must contain at least two words", (value) => {
+      if (value) {
+        const words = value.split(" ");
+        return words.length === 2;
+      }
+      return false;
+    })
+    .required(),
   email: yup
     .string()
     .trim()
@@ -27,11 +30,11 @@ const schema = yup
     )
     .required(),
   message: yup.string().trim().min(10).required(),
-})
+});
 
 const Contact = () => {
   const form = useRef();
-  
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -64,11 +67,11 @@ const Contact = () => {
     sendEmail(e);
     reset();
     toast.success("Message sent successfully!", {
-        style: {
-          background: '#2c2c6c',
-          color:'#fff'
-        },
-      });
+      style: {
+        background: "#2c2c6c",
+        color: "#fff",
+      },
+    });
     console.log(data);
   };
 
@@ -88,7 +91,11 @@ const Contact = () => {
           <p>javidangrbnl@gmail.com</p>
           <button onClick={handleEmailButtonClick}>Send a message</button>
         </div>
-        <form ref={form} onSubmit={handleSubmit(onSubmit)} data-aos="zoom-in-left">
+        <form
+          ref={form}
+          onSubmit={handleSubmit(onSubmit)}
+          data-aos="zoom-in-left"
+        >
           <input
             {...register("fullname")}
             placeholder="Your fullname"

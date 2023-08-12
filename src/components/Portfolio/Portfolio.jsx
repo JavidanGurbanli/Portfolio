@@ -8,7 +8,6 @@ const Portfolio = () => {
     window.open(link, "_blank");
   };
 
-
   return (
     <section id="portfolio">
       <h2 data-aos="fade-up">Portfolio</h2>

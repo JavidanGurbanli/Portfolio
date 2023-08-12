@@ -7,24 +7,23 @@ import Header from "./components/Header/Header";
 import Nav from "./components/Nav/Nav";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Skills from "./components/Skills/Skills";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
-
   useEffect(() => {
-    AOS.init(); 
+    AOS.init();
   }, []);
-  
+
   return (
     <div className="App">
       <Header />
-      <Nav/>
-      <About/>
-      <Skills/>
-      <Portfolio/>
-      <Contact/>
-      <Footer/>
+      <Nav />
+      <About />
+      <Skills />
+      <Portfolio />
+      <Contact />
+      <Footer />
     </div>
   );
 }

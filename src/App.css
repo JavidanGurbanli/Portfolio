@@ -6,11 +6,11 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
+body {
   background-color: #1f1f38;
   background-image: url("../public/images/bg-texture.png");
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
