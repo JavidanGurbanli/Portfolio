@@ -1,6 +1,7 @@
 import "./Skills.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faUserPen } from "@fortawesome/free-solid-svg-icons";
+
 const Skills = () => {
   return (
     <section id="skills">
@@ -16,7 +17,7 @@ const Skills = () => {
               <FontAwesomeIcon icon={faCode} className="icon" /> CSS
             </li>
             <li>
-              <FontAwesomeIcon icon={faCode} className="icon" /> SCSS
+              <FontAwesomeIcon icon={faCode} className="icon" /> SCSS / SASS
             </li>
             <li>
               <FontAwesomeIcon icon={faCode} className="icon" /> Bootstrap
@@ -25,13 +26,25 @@ const Skills = () => {
               <FontAwesomeIcon icon={faCode} className="icon" /> Tailwind CSS
             </li>
             <li>
+              <FontAwesomeIcon icon={faCode} className="icon" /> Material UI
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faCode} className="icon" /> Chakra UI
+            </li>
+            <li>
               <FontAwesomeIcon icon={faCode} className="icon" /> JavaScript
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faCode} className="icon" /> TypeScript
             </li>
             <li>
               <FontAwesomeIcon icon={faCode} className="icon" /> React
             </li>
             <li>
               <FontAwesomeIcon icon={faCode} className="icon" /> Redux
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faCode} className="icon" /> Next JS
             </li>
           </ul>
         </div>
@@ -41,6 +54,12 @@ const Skills = () => {
             <li>
               <FontAwesomeIcon icon={faUserPen} className="icon" />
               Communication
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faUserPen} className="icon" /> Flexibility
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faUserPen} className="icon" /> Self-discipline
             </li>
             <li>
               <FontAwesomeIcon icon={faUserPen} className="icon" /> Teamwork

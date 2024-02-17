@@ -9,6 +9,14 @@
       "websiteLink": "https://ornate-cannoli-512a55.netlify.app/"
     },
     {
+      "imgUrl": "/images/RoFruit.png",
+      "title": "RoFruit",
+      "description": "This is a e-commerce page RoFruit, a online grocery store.",
+      "technologies": ["SCSS", "JavaScript", "React JS"],
+      "githubLink": "https://github.com/JavidanGurbanli/RoFruit",
+      "websiteLink": "https://singular-eclair-3f9b55.netlify.app/"
+    },
+    {
       "imgUrl": "/images/Truvimons.png",
       "title": "Truvimons",
       "description": "This is the Ultimate Data Analysis Platform.",
