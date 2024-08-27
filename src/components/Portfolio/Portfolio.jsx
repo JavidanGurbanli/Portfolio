@@ -13,6 +13,7 @@ const Portfolio = () => {
       <h2 data-aos="fade-up">Portfolio</h2>
       <div className="projects" data-aos="zoom-in">
         <Swiper
+          style={{width: "100%"}}
           modules={[A11y, EffectCoverflow, Autoplay]}
           spaceBetween={50}
           autoplay={{
